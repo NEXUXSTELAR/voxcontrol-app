@@ -1,0 +1,20 @@
+name: Proposer une idée
+description: Une fonction ou une amélioration
+labels: [idée]
+body:
+  - type: textarea
+    id: besoin
+    attributes:
+      label: Le besoin
+      description: Dans quelle situation cette idée t'aiderait ?
+    validations:
+      required: true
+  - type: textarea
+    id: proposition
+    attributes:
+      label: Ta proposition
+  - type: textarea
+    id: securite
+    attributes:
+      label: Impact sur la sécurité
+      description: L'idée donne-t-elle accès à quelque chose de nouveau sur le PC ?

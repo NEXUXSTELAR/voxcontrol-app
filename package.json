@@ -1,0 +1,29 @@
+{
+  "name": "voxcontrol",
+  "private": true,
+  "version": "0.1.0",
+  "workspaces": [
+    "agent",
+    "app"
+  ],
+  "scripts": {
+    "build": "npm run build -w app",
+    "start": "node agent/src/main.ts",
+    "dev:app": "npm run dev -w app",
+    "test": "node --test tests/agent.test.mjs"
+  },
+  "engines": {
+    "node": ">=24"
+  },
+  "description": "Pilote Claude Code et ton PC Windows depuis ton iPhone, à la voix.",
+  "license": "MIT",
+  "keywords": [
+    "claude-code",
+    "voice",
+    "iphone",
+    "pwa",
+    "windows",
+    "tailscale",
+    "remote-control"
+  ]
+}

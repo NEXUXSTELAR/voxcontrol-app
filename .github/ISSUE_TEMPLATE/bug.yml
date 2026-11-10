@@ -1,0 +1,27 @@
+name: Signaler un bug
+description: Quelque chose ne marche pas comme prévu
+labels: [bug]
+body:
+  - type: textarea
+    id: quoi
+    attributes:
+      label: Ce qui se passe
+      description: Ce que tu as fait, ce que tu attendais, ce qui s'est passé.
+    validations:
+      required: true
+  - type: textarea
+    id: etapes
+    attributes:
+      label: Étapes pour reproduire
+      placeholder: "1. Ouvrir l'espace PC\n2. Toucher « Voir l'écran »\n3. …"
+  - type: input
+    id: versions
+    attributes:
+      label: Versions
+      placeholder: "VoxControl 0.1.0, Windows 11, iOS 18"
+  - type: textarea
+    id: journal
+    attributes:
+      label: Extrait du journal
+      description: "%LOCALAPPDATA%\VoxControl\agent.log — retire toute information personnelle avant de coller."
+      render: text
